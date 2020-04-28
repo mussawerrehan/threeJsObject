@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>3D object loader</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/ds.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light" >
+			<a>  Information Bar</a>
+		</nav>
+		<div class="row">
+			<div class="col-md-3">
+				<div>   
+				<button class="buttons"  type="button"  >
+				   Open </button>  
+				</div>
+				<div>   
+				<button class="buttons">
+				   Points </button>  
+				</div>
+			
+				<div >   
+					<button onclick="controls()" class="buttons">
+						Curve</button>  
+				</div>
+				<div >   
+				<button onclick="rotate()" class="buttons" style="margin-top: 25%;">
+				   send </button>  
+				</div>
+			
+			
+			</div>
+			<div class="col-md-9" id="canvas">
+			</div>
+		</div>	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/87/three.min.js"></script>
+		<script src="/assets/OrbitControls.js"></script>
+		<script src="/assets/OBJLoader.js"></script>
+		<script src="/assets/MTLLoader.js"></script>
+		<script src="/scripts.js"></script>
+	</body>
+</html>
